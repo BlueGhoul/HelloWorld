@@ -15,16 +15,13 @@ namespace HelloWorld.Controllers
         private HelloWorldContext db = new HelloWorldContext();
 
         // GET: Reviews
+        // GET: Reviews
         public ActionResult Index()
         {
             return View(db.Reviews.ToList());
         }
         
-        //// GET: Reviews
-        //public ActionResult Index()
-        //{
-        //    return View(db.Reviews.ToList());
-        //}
+    
 
         // GET: Reviews/Details/5
         public ActionResult Details(int? id)
